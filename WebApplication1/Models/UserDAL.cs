@@ -9,7 +9,7 @@ namespace DesafioCSharp_Teylor.Models
 {
     public class UserDAL
     {
-        public const string CONNECTION_STRING = "server=localhost;user id=root;persistsecurityinfo=True;database=test";
+        public const string CONNECTION_STRING = "server=localhost;user id=root;persistsecurityinfo=True;database=test;pwd=Godsnotdead146";
 
         MySqlConnection conn = new MySqlConnection(CONNECTION_STRING);
 
@@ -40,6 +40,8 @@ namespace DesafioCSharp_Teylor.Models
                 }
                 else
                 {
+                    Console.WriteLine(ex.Message);
+                    Console.WriteLine(ex.InnerException);
                     return ("Erro no Banco de dados. Contate o administrador.");
                 }
             }
@@ -116,7 +118,7 @@ namespace DesafioCSharp_Teylor.Models
                     temp.id = Convert.ToInt32(reader["id"]);
                     temp.Name = Convert.ToString(reader["Name"]);
                     temp.Birthdate = Convert.ToDateTime(reader["Birthdate"]); /*Rever*/
-                    temp.CPF = Convert.ToInt32(reader["CPF"]);
+                    temp.CPF = Convert.ToString(reader["CPF"]);
                     temp.Address = Convert.ToString(reader["Address"]);
                     temp.City = Convert.ToString(reader["City"]);
 

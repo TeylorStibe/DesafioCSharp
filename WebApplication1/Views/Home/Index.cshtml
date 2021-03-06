@@ -3,23 +3,33 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4"> <b>Cadastro de Usuários</b></h1>
-    <form action="/Home" method="post">
-        <form>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </form>
+    <h1 style="text-align:center; padding-top:40px;"> <b>Cadastro de Usuários</b></h1>
+
+    <label style="font-size:20px; padding-top:55px;">Escolha a opção que deseja:</label>
+    <div>
+
+        <div>
+            <a class="button" style="vertical-align:middle" href="/Home/Creation">
+                Criação
+            </a>
+        </div>
+        <div>
+            <a class="button" style="vertical-align:middle" href="/Home/Edition">
+                Edição
+            </a>
+        </div>
+        <div>
+            <a class="button" style="vertical-align:middle" href="/Home/Delete">
+                Exclusão
+            </a>
+        </div>
+        <div>
+            <a class="button" style="vertical-align:middle" href="/Home/Getall">
+                Listagem
+            </a>
+        </div>
+
+    </div>
+
+
 </div>

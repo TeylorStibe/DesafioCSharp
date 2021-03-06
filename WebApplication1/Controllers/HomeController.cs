@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DesafioCSharp_Teylor.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -25,6 +26,27 @@ namespace WebApplication1.Controllers
 
         public IActionResult Privacy()
         {
+            return View();
+        }
+
+        public IActionResult Creation(string name, DateTime birthdate, string cpf, string address, string city)
+        {
+            ViewBag.name= "";
+            ViewBag.birthdate= "";
+            ViewBag.cpf= "";
+            ViewBag.address= "";
+            ViewBag.city= "";
+            User user = new User();
+            UserDAL userdal = new UserDAL();
+            
+            user.Name = name;
+            user.Birthdate = birthdate;
+            user.CPF = cpf;
+            user.Address = address;
+            user.City = city;
+
+            ViewData["result"] = userdal.Insert(user);
+
             return View();
         }
 

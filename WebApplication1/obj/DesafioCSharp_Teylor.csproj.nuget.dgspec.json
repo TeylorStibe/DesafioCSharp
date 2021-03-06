@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Luan\\Desktop\\Desafio C#\\WebApplication1\\DesafioCSharp_Teylor.csproj": {}
+    "C:\\Users\\User\\OneDrive\\Área de Trabalho\\Teylor\\DesafioCSharp\\WebApplication1\\DesafioCSharp_Teylor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Luan\\Desktop\\Desafio C#\\WebApplication1\\DesafioCSharp_Teylor.csproj": {
+    "C:\\Users\\User\\OneDrive\\Área de Trabalho\\Teylor\\DesafioCSharp\\WebApplication1\\DesafioCSharp_Teylor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Luan\\Desktop\\Desafio C#\\WebApplication1\\DesafioCSharp_Teylor.csproj",
+        "projectUniqueName": "C:\\Users\\User\\OneDrive\\Área de Trabalho\\Teylor\\DesafioCSharp\\WebApplication1\\DesafioCSharp_Teylor.csproj",
         "projectName": "DesafioCSharp_Teylor",
-        "projectPath": "C:\\Users\\Luan\\Desktop\\Desafio C#\\WebApplication1\\DesafioCSharp_Teylor.csproj",
-        "packagesPath": "C:\\Users\\Luan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Luan\\Desktop\\Desafio C#\\WebApplication1\\obj\\",
+        "projectPath": "C:\\Users\\User\\OneDrive\\Área de Trabalho\\Teylor\\DesafioCSharp\\WebApplication1\\DesafioCSharp_Teylor.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\OneDrive\\Área de Trabalho\\Teylor\\DesafioCSharp\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Luan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
