@@ -1,0 +1,55 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Creation";
+}
+
+<div class="text-center">
+    <h1 style="text-align:center; padding-top:40px;"><b>Criação de usuário</b></h1>
+    <form action="/Home/Creation" method="post">
+        <div style="display:block;">
+            <label>Nome</label>
+            <br />
+            <input type="text" value="@ViewBag.name" name="name" placeholder="Nome">
+        </div>
+        <div>
+            <label>Data de nascimento</label>
+            <br />
+            <input type="date" value="@ViewBag.birthdate" name="birthdate" placeholder="Data de Nascimento">
+        </div>
+        <div>
+            <label>CPF</label>
+            <br />
+            <input type="text" value="@ViewBag.cpf" name="cpf" placeholder="CPF">
+        </div>
+        <div>
+            <label>Endereço</label>
+            <br />
+            <input type="text" value="@ViewBag.address" name="address" placeholder="Endereço">
+        </div>
+        <div>
+            <label>Cidade</label>
+            <br />
+            <input type="text" value="@ViewBag.city" name="city" placeholder="Cidade">
+        </div>
+        <br />
+        @{
+            if (Convert.ToString(ViewData["result"]) != "")
+            {
+                if (Convert.ToString(ViewData["result"]).Contains("!"))
+                {
+                    <label style="color:green;font-size:13px"> @ViewData["result"] </label>
+                }
+                else
+                {
+                    <label style="color:red;font-size:12px"> @ViewData["result"] </label>
+                }
+            }
+        }
+        <br />
+        <button class="button" name="reg" value="Cadastrar" type="submit">Cadastrar</button>
+        <input type="hidden" name="reg" value="@ViewBag.reg" />
+        <a class="button" name="back" value="Voltar" type="submit" href="/Home/Index" style="text-decoration:none">Voltar</a>
+    </form>
+</div>
